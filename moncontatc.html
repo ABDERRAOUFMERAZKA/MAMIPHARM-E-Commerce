@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Bienvenue au espace de gestion des rendez-vous</title>
+ <link href="style.css" rel="stylesheet" type="text/css" />
+ <!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="js/belatedPNG.js"></script>
+<script>
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]--><script src="js/jquery-1.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/loopedslider.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript"> 
+function verif() {
+if(document.monform.04.value=="") {
+  alert("Veuillez vérifier le champ");
+}
+}
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#slider').loopedSlider({
+			autoStart: 6000,
+			restart: 5000
+		});
+		
+	});
+</script>
+</head>
+
+<body>
+<section id="page">
+<div id="bodywrap">
+<section id="top">
+<nav>
+<h1 id="sitename">Bienvenue au éspace de gestion des rendez-vous</h1>
+  
+ <ul id="sitenav">
+  	<li class="current"><a href="index.php">Bienvenue au éspace de gestion des rendez-vous</a></li>
+  	
+  
+  </ul>
+  
+</nav>
+<header id="homeheader">
+
+
+<div id="slider">	
+	<div class="container">
+	
+	
+	<ul class="pagination">
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+
+	</ul>	
+    </div>
+</div>
+
+
+</header>
+</section>
+<section id="contentwrap">
+<div id="contents">
+<div id="topcolumns">
+<div class="col">
+  <img src="images/cadena.jpg" width="97" height="96" alt="graph" class="imgright">
+  <h2>Authentification </h2>
+<p>Pour accéder a votre éspace veuillez entrer votre login et password </p>
+
+</div>
+<div class="col">
+<table width="121%" height="313" border="0">
+
+                             <tr>
+                              <form name="monform" action="resultcontact.php" METHOD="POST" >
+                               <th width="48%" scope="col">Login</th>
+                               <th width="52%" scope="col"><label>
+                                 <div align="left">
+                                   <input name="01" type="text" id="01" />
+                                 </div>
+                               </label></th>
+                             </tr>
+                             <tr>
+                               <th scope="row">Password</th>
+                               <td><label>
+                                 <input name="02" type="text" id="02" />
+                               </label></td>
+                             </tr>
+                             
+                             <tr>
+                               <th scope="row">&nbsp;</th>
+                               <td><label>
+
+                                 <div align="left">
+                                   <input type="submit" name="Submit2" value="Connexion" onClick="verif()"  />
+                                   <input type="reset" name="Submit3" value="annuler" />
+                                 </div>
+                                 </label></td></tr>
+                             <tr>
+                               <th scope="row">&nbsp;</th>
+                               <td><label></label></td>
+                             </tr>
+            </table>
+                      </form>
+  <h2>&nbsp;</h2>
+</div>
+<div class="clear"></div>
+
+</div>
+</div>
+</section>
+</div>
+<footer id="pagefooter">
+<div id="bottom">
+<div class="block1">
+
+</div>
+<div class="clear"></div>
+</div>
+<div id="credits">
+<p>
+<span class="copyright">
+copyrigth&copy; juin 2013|  All Rights Reserved </span>
+<span id="designcredit">
+<!--Creative Common Non-Commercial, Attribution License
+Designed by : Roshan Ravi
+Author URI : cssheaven.org
+Do Not Remove this Credits and Link back to CSSHeaven from the template--> désigned by <a href="../../../Users/utilisateur/Downloads/Compressed/portfolio/index.html">proline</a> service</span>
+</p>
+</div>
+</footer>
+
+</section>
+</body>
+</html>
